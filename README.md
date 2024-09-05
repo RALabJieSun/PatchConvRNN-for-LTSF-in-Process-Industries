@@ -49,7 +49,7 @@ __4\.	Dataset applications__
 
 __5\.	数据集获取与使用__
 
-- <a id="_Hlk171778125"></a>__Github Open Source URL__： RAL\_TCM Dataset | Github\(https://github.com/TsingloongWang/RAL_TCM).
+- <a id="_Hlk171778125"></a>__Github Open Source URL__： RAL\_TCM Dataset | Github\(RALabJieSun/PatchConvRNN-for-LTSF-in-Process-Industries).
 - __Copyright Statement__： This dataset and the associated work are provided by the State Key Laboratory of Rolling and Automation \(RAL\), Northeastern University, Shenyang 110819, Liaoning, PR China\. The dataset is utilized exclusively for scientific research purposes\. If used, proper citation in the literature is required\. Please cite it as follows: __论文引用格式__
 
 __6\.	Potential application areas for the dataset__
