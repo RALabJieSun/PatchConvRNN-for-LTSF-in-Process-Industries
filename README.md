@@ -26,12 +26,12 @@ The target predicted process variables (8) mentioned in the text are:
 
 ```
 The key hyperparameters of the model and their meaning:
---seq_len: The length of the review window
---patch_len: enc_patch_len
---pred_len: The predicted length
---patch_pred_len:dec_patch_len
---seq_cha: channel or dimension for sequence
---enc_in: fus_out
+"--seq_len": The length of the review window
+"--patch_len": enc_patch_len
+"--pred_len": The predicted length
+"--patch_pred_len":dec_patch_len
+"--seq_cha": channel or dimension for sequence
+"--enc_in": fus_out
 Notes:
 pred_len: the forecasting horizon; enc_patch_len: the length of each temporal patch extracted from the input sequence in the encoder; dec_patch_len: the length of each temporal patch in the decoder; fus_out: The output channels of the pointwise convolution; seq_cha: The number of variables or channels in the input sequence; seq_len: The number of time steps in the look-back window; conv_k: The kernel size used in depthwise convolution; dropout: The rate at which neurons are randomly set to zero during training to prevent overfitting; enc_in: The output dimensions or channels of Linear Projection before the RNN cell in the encoder.
 ```
