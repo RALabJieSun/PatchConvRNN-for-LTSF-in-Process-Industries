@@ -1,6 +1,6 @@
 # README
 
-# 1.1 How to use
+# 1. How To Use
 
 First, install the missing libraries as required.
 
@@ -11,7 +11,7 @@ Next, open the run.py configuration file and adjust the variants of codes as nee
 "--is_training": training mode
 ```
 
-The target prediction process variables (8) mentioned in the text are:
+The target predicted process variables (8) mentioned in the text are:
 
 ```
 'TN\L2_AGC_S1TRFC_ACT': RFC_STD#1
@@ -48,7 +48,7 @@ Before starting the training, please check lines 262 and 344 in the exp_main.py 
 # final_loss = 0.5 * loss1 + 0.5 * loss2
 ```
 
-# 1.2 checkpoints
+## 1.1 Checkpoints
 
 the checkpoints folder contains the model weights for our PatchConvRNN, which achieved state-of-the-art forecasting results at different forecasting horizons as described in the paper (Tables 1 and 3). The meanings of each part of the file names in the checkpoints folder are as follows:
 
@@ -68,9 +68,7 @@ M10: the forecasting horizon=10;
 
 mixed_std: mixed_std_loss
 
-
-
-# 1.3 Outputs
+## 1.2 Outputs
 
 The outputs folder contains visualization outputs and metrics files for model predictions. The initial .CSV file represents the result prediction data, while the "visual results" directory contains visual comparisons of sample prediction results.
 
@@ -98,13 +96,13 @@ test_trues_Y.csv: Actual values.
 
 
 
-# RAL_TCM Dataset Readme
+# 2. RAL_TCM Dataset Readme
 
-## 2.1. Overview of the Dataset
+## 2.1 Overview Of The Dataset
 
 The dataset, named RAL_TCM (Tandem Cold-rolling Mill), is a large-scale benchmark dataset designed for multivariate time series forecasting in the steel industry, particularly targeting complex process operations in process industries. The RAL_TCM dataset was collected from the tandem cold rolling production line of a steel company in Jiangsu Province, China, through Level-2 process control systems and PDA systems. It encompasses almost all critical process parameters involved in the tandem cold rolling production process.
 
-## 2. 2The Composition of the Dataset
+## 2. 2 The Composition Of The Dataset
 
 * **Data Source**: The tandem cold rolling production site of strip steel at a steel enterprise in Jiangsu Province, China.
 
@@ -112,7 +110,7 @@ The dataset, named RAL_TCM (Tandem Cold-rolling Mill), is a large-scale benchmar
 
 * **Data content**:
   - **Number of strip coils: 5** 
-  -  **Time steps :**A total of 20,299 time steps with millisecond time granularity
+  -  **Time steps** :A total of 20,299 time steps with millisecond time granularity
   -  Use a **blank** line to separate each coils.
 
 - **Number of process variables:** Each data point consists of 170 process variables
@@ -139,7 +137,17 @@ The dataset, named RAL_TCM (Tandem Cold-rolling Mill), is a large-scale benchmar
 
     THK_STD#5
 
-## 2.3 Characteristics and split of the dataset** 
+## 2.3 Characteristics And Split Of The Dataset
+
+* **High-time resolution:** Millisecond data acquisition provides high temporal resolution data for high-precision prediction tasks.
+
++ **Multivariate Temporal Sequencing**: Multivariate time-series data with 170 process variables per time step captures multiple complex relationships in the production process and provides sufficient information for modelling.
+
++ **Large-scale data**: The data volume of 20,299 time steps provides rich samples for model training and validation.
+
++ **Split of the dataset**： The recommended split ratio of training, validation, and test sets is 7: 1: 2.
+
+## 2.4 **Characteristics And Split Of The Dataset** 
 
 * **High-time resolution:** Millisecond data acquisition provides high temporal resolution data for high-precision prediction tasks.
 
@@ -149,26 +157,12 @@ The dataset, named RAL_TCM (Tandem Cold-rolling Mill), is a large-scale benchmar
 
 + **Split of the dataset**： The recommended split ratio of training, validation, and test sets is 7: 1: 2.
 
-## 2.4 **Characteristics and split of the dataset** 
-
-* **High-time resolution:** Millisecond data acquisition provides high temporal resolution data for high-precision prediction tasks.
-
-+ **Multivariate Temporal Sequencing**: Multivariate time-series data with 170 process variables per time step captures multiple complex relationships in the production process and provides sufficient information for modelling.
-
-+ **Large-scale data**: The data volume of 20,299 time steps provides rich samples for model training and validation。
-
-+ **Split of the dataset**： The recommended split ratio of training, validation, and test sets is 7: 1: 2.
-
-
-
-
-
-## 2.5 **Dataset acquisition and use**
+## 2.5 **Dataset Acquisition And Use**
 
 - **Github** **Open Source URL**： RAL_TCM Dataset | RALabJieSun/PatchConvRNN-for-LTSF-in-Process-Industries (github.com)](https://github.com/RALabJieSun/PatchConvRNN-for-LTSF-in-Process-Industries).
 - **Copyright Statement**： This     dataset and the associated work are provided by the State Key Laboratory     of Rolling and Automation (RAL), Northeastern University, Shenyang 110819,     Liaoning, PR China. The dataset is utilized exclusively for scientific     research purposes. If used, proper citation in the literature is required. Please     cite it as follows: ==**论文引用格式**==
 
-## 2.6 Potential application areas for the dataset**
+## 2.6 Potential Application Areas For The Dataset
 
 Engineers in the steel industry can use the dataset for precise control and optimization of production processes, while data scientists and AI experts can use it to develop and validate new time-series forecasting algorithms to drive process industry intelligence. In conjunction with the dataset, the performance of different models can be objectively evaluated, providing data to support further process improvements. At the same time, it provides the basis for creating more informative sensor layouts and improving equipment regulation strategies.
 

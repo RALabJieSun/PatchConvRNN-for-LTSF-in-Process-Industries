@@ -2,9 +2,7 @@
 
 <center>170-Physical Descriptions of process variables for strip TCR manufacturing industry</center>
 
-
-
-[Fig. Instrument arrangement for recording process parameters at the TCM site of strip steel]: blob:https://github.com/d67787cf-6d23-4a29-8b68-90453bfcc095
+<img src='C:\Users\let\Documents\GitHub\PatchConvRNN-for-LTSF-in-Process-Industries\fig\Instrument arrangement for recording process parameters at the TCR site of strip steel.jpg'>
 
 
 
