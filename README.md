@@ -102,7 +102,7 @@ test_trues_Y.csv: Actual values.
 
 The dataset, named RAL_TCM (Tandem Cold-rolling Mill), is a large-scale benchmark dataset designed for multivariate time series forecasting in the steel industry, particularly targeting complex process operations in process industries. The RAL_TCM dataset was collected from the tandem cold rolling production line of a steel company in Jiangsu Province, China, through Level-2 process control systems and PDA systems. It encompasses almost all critical process parameters involved in the tandem cold rolling production process.
 
-## 2. 2 The Composition of the Dataset
+## 2.2 The Composition of the Dataset
 
 * **Data Source**: The tandem cold rolling production site of strip steel at a steel enterprise in Jiangsu Province, China.
 
