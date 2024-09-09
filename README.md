@@ -137,17 +137,7 @@ The dataset, named RAL_TCM (Tandem Cold-rolling Mill), is a large-scale benchmar
 
     THK_STD#5
 
-## 2.3 Characteristics and Split of the Dataset
-
-* **High-time resolution:** Millisecond data acquisition provides high temporal resolution data for high-precision prediction tasks.
-
-+ **Multivariate Temporal Sequencing**: Multivariate time-series data with 170 process variables per time step captures multiple complex relationships in the production process and provides sufficient information for modelling.
-
-+ **Large-scale data**: The data volume of 20,299 time steps provides rich samples for model training and validation.
-
-+ **Split of the dataset**： The recommended split ratio of training, validation, and test sets is 7: 1: 2.
-
-## 2.4 **Characteristics and Split of the Dataset** 
+## 2.3 **Characteristics and Split of the Dataset** 
 
 * **High-time resolution:** Millisecond data acquisition provides high temporal resolution data for high-precision prediction tasks.
 
@@ -157,12 +147,12 @@ The dataset, named RAL_TCM (Tandem Cold-rolling Mill), is a large-scale benchmar
 
 + **Split of the dataset**： The recommended split ratio of training, validation, and test sets is 7: 1: 2.
 
-## 2.5 **Dataset Acquisition and Use**
+## 2.4 **Dataset Acquisition and Use**
 
 - **Github** **Open Source URL**： RAL_TCM Dataset | RALabJieSun/PatchConvRNN-for-LTSF-in-Process-Industries (github.com)](https://github.com/RALabJieSun/PatchConvRNN-for-LTSF-in-Process-Industries).
 - **Copyright Statement**： This     dataset and the associated work are provided by the State Key Laboratory     of Rolling and Automation (RAL), Northeastern University, Shenyang 110819,     Liaoning, PR China. The dataset is utilized exclusively for scientific     research purposes. If used, proper citation in the literature is required. Please     cite it as follows: ==**论文引用格式**==
 
-## 2.6 Potential Application Areas for the Dataset
+## 2.5 Potential Application Areas for the Dataset
 
 Engineers in the steel industry can use the dataset for precise control and optimization of production processes, while data scientists and AI experts can use it to develop and validate new time-series forecasting algorithms to drive process industry intelligence. In conjunction with the dataset, the performance of different models can be objectively evaluated, providing data to support further process improvements. At the same time, it provides the basis for creating more informative sensor layouts and improving equipment regulation strategies.
 
