@@ -4,7 +4,9 @@
 
 
 
-FIG
+[Fig. Instrument arrangement for recording process parameters at the TCM site of strip steel]: blob:https://github.com/d67787cf-6d23-4a29-8b68-90453bfcc095
+
+
 
 <center>Fig. Instrument arrangement for recording process parameters at the TCM site of strip steel</center>
 
