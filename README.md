@@ -137,7 +137,7 @@ The dataset, named RAL_TCM (Tandem Cold-rolling Mill), is a large-scale benchmar
 
     THK_STD#5
 
-## 2.3 Characteristics And Split of the Dataset
+## 2.3 Characteristics and Split of the Dataset
 
 * **High-time resolution:** Millisecond data acquisition provides high temporal resolution data for high-precision prediction tasks.
 

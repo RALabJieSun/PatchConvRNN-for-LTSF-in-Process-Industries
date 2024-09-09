@@ -1,14 +1,14 @@
 # README
 
-​						170-Physical Descriptions of process variables for strip TCR manufacturing industry
+<div align=center>170-Physical Descriptions of process variables for strip TCR manufacturing industry</div>
 
 <img src='Instrument arrangement for recording process parameters at the TCR site of strip steel.jpg'>
 
-​							Fig. Instrument arrangement for recording process parameters at the TCM site of strip steel
+<div align=center>Fig. Instrument arrangement for recording process parameters at the TCM site of strip steel</div>
 
+​	<br>
 
-
-​										List of 170-process variables for strip TCR manufacturing industry
+<div align=center>List of 170-process variables for strip TCR manufacturing industry</div>
 
 | **ID** | **Variable**           | **Physical  Description**                                    | **Unit** | **Notes**                              |
 | ------ | ---------------------- | ------------------------------------------------------------ | -------- | -------------------------------------- |
