@@ -1,6 +1,6 @@
 # README
 
-# 1. How To Use
+# 1. How to Use
 
 First, install the missing libraries as required.
 
@@ -56,15 +56,15 @@ the checkpoints folder contains the model weights for our PatchConvRNN, which ac
 
 For example, the folder name STD1_M10_20_10_50_mixed_std can be interpreted as follows:  
 
-STD1: RFC_STD#1; 
+STD1: RFC_STD#1
 
-M10: the forecasting horizon=10; 
+M10: the forecasting horizon=10
 
-20: enc_patch_len=20; 
+20: enc_patch_len=20
 
-10: dec_patch_len=10; 
+10: dec_patch_len=10
 
-50: fus_out=50; 
+50: fus_out=50
 
 mixed_std: mixed_std_loss
 
@@ -96,13 +96,13 @@ test_trues_Y.csv: Actual values.
 
 
 
-# 2. RAL_TCM Dataset Readme
+# 2. RAL_TCM Dataset
 
-## 2.1 Overview Of The Dataset
+## 2.1 Overview of the Dataset
 
 The dataset, named RAL_TCM (Tandem Cold-rolling Mill), is a large-scale benchmark dataset designed for multivariate time series forecasting in the steel industry, particularly targeting complex process operations in process industries. The RAL_TCM dataset was collected from the tandem cold rolling production line of a steel company in Jiangsu Province, China, through Level-2 process control systems and PDA systems. It encompasses almost all critical process parameters involved in the tandem cold rolling production process.
 
-## 2. 2 The Composition Of The Dataset
+## 2. 2 The Composition of the Dataset
 
 * **Data Source**: The tandem cold rolling production site of strip steel at a steel enterprise in Jiangsu Province, China.
 
@@ -129,15 +129,15 @@ The dataset, named RAL_TCM (Tandem Cold-rolling Mill), is a large-scale benchmar
 
     RFC_STD#5
 
-  - Thickness of outlet strips for Stands 1, 4 and 5:
+  - Thicknesses of outlet strips for Stands 1, 4 and 5:
 
-    THK_STD#1, 
+    THK_STD#1
 
-    THK_STD#4, 
+    THK_STD#4
 
     THK_STD#5
 
-## 2.3 Characteristics And Split Of The Dataset
+## 2.3 Characteristics And Split of the Dataset
 
 * **High-time resolution:** Millisecond data acquisition provides high temporal resolution data for high-precision prediction tasks.
 
@@ -147,7 +147,7 @@ The dataset, named RAL_TCM (Tandem Cold-rolling Mill), is a large-scale benchmar
 
 + **Split of the dataset**： The recommended split ratio of training, validation, and test sets is 7: 1: 2.
 
-## 2.4 **Characteristics And Split Of The Dataset** 
+## 2.4 **Characteristics and Split of the Dataset** 
 
 * **High-time resolution:** Millisecond data acquisition provides high temporal resolution data for high-precision prediction tasks.
 
@@ -157,12 +157,12 @@ The dataset, named RAL_TCM (Tandem Cold-rolling Mill), is a large-scale benchmar
 
 + **Split of the dataset**： The recommended split ratio of training, validation, and test sets is 7: 1: 2.
 
-## 2.5 **Dataset Acquisition And Use**
+## 2.5 **Dataset Acquisition and Use**
 
 - **Github** **Open Source URL**： RAL_TCM Dataset | RALabJieSun/PatchConvRNN-for-LTSF-in-Process-Industries (github.com)](https://github.com/RALabJieSun/PatchConvRNN-for-LTSF-in-Process-Industries).
 - **Copyright Statement**： This     dataset and the associated work are provided by the State Key Laboratory     of Rolling and Automation (RAL), Northeastern University, Shenyang 110819,     Liaoning, PR China. The dataset is utilized exclusively for scientific     research purposes. If used, proper citation in the literature is required. Please     cite it as follows: ==**论文引用格式**==
 
-## 2.6 Potential Application Areas For The Dataset
+## 2.6 Potential Application Areas for the Dataset
 
 Engineers in the steel industry can use the dataset for precise control and optimization of production processes, while data scientists and AI experts can use it to develop and validate new time-series forecasting algorithms to drive process industry intelligence. In conjunction with the dataset, the performance of different models can be objectively evaluated, providing data to support further process improvements. At the same time, it provides the basis for creating more informative sensor layouts and improving equipment regulation strategies.
 

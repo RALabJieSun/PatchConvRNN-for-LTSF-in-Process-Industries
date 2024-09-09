@@ -11,29 +11,29 @@ def RSE(pred, true, threshold=-1e9):
 
 
 def CORR(pred, true, threshold=-1e9):
-    # 确保pred和true都高于阈值
+    
     mask = np.logical_and(true > threshold, pred > threshold)
 
-    # 应用mask
+    
     pred_threshold = pred[mask]
     true_threshold = true[mask]
 
-    # 如果pred_threshold和true_threshold不为空
+    
     if pred_threshold.size > 0 and true_threshold.size > 0:
-        # 计算每个对应位置的平均值后进行中心化
+        
         u = ((true_threshold - true_threshold.mean(axis=-1, keepdims=True)) *
              (pred_threshold - pred_threshold.mean(axis=-1, keepdims=True))).sum(axis=-1)
 
-        # 计算分母
+        
         d = np.sqrt(
             ((true_threshold - true_threshold.mean(axis=-1, keepdims=True)) ** 2 *
              (pred_threshold - pred_threshold.mean(axis=-1, keepdims=True)) ** 2).sum(axis=-1))
-        d += 1e-12  # 防止除以0
+        d += 1e-12  
 
-        # 计算相关性并返回
+        
         return 0.018 * (u / d).mean()
     else:
-        # 如果过滤后没有数据，返回NaN或者其他指定值
+        
         return None
 
 
