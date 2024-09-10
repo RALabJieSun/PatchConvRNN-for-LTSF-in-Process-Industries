@@ -1,8 +1,8 @@
 # README
 
-# 1. How to Use
+# 1. Usage
 
-First, install the missing libraries as required.
+Read the environment requirements file 'requirements.txt', and download the missing support libraries for Python
 
 Next, open the run.py configuration file and adjust the variants of codes as needed. The variants of codes below that need to be adjusted are:
 
