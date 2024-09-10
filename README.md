@@ -50,7 +50,7 @@ Before starting the training, please check lines 262 and 344 in the exp_main.py 
 
 ## 1.1 Checkpoints
 
-the checkpoints folder contains the model weights for our PatchConvRNN, which achieved state-of-the-art forecasting results at different forecasting horizons as described in the paper (Tables 1 and 3). The meanings of each part of the file names in the checkpoints folder are as follows:
+the checkpoints folder contains the pre-trained model weights for our PatchConvRNN, which achieved state-of-the-art forecasting results at different forecasting horizons as described in the paper (Tables 1 and 3).
 
 {prediction variables}-{The predicted length}-{enc_patch_len}-{dec_patch_len}-{fus_out}-{loss}.
 
