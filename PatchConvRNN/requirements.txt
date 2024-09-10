@@ -5,4 +5,4 @@ ptflops==0.7.2.2
 scikit_learn==1.3.2
 torch==2.1.1+cu121
 tensorboard
-python==3.9
+
