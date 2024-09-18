@@ -36,7 +36,7 @@ Notes:
 pred_len: the forecasting horizon; enc_patch_len: the length of each temporal patch extracted from the input sequence in the encoder; dec_patch_len: the length of each temporal patch in the decoder; fus_out: The output channels of the pointwise convolution; seq_cha: The number of variables or channels in the input sequence; seq_len: The number of time steps in the look-back window; conv_k: The kernel size used in depthwise convolution; dropout: The rate at which neurons are randomly set to zero during training to prevent overfitting; enc_in: The output dimensions or channels of Linear Projection before the RNN cell in the encoder.
 ```
 
-Finally, if want to perform model prediction to verify the results presented in our paper, please modify the setting on line-171 of the code. Change the setting to the filename of the model weight file for the desired results. For example:
+Finally, if want to perform model prediction to verify the results presented in our paper, please modify the run.py setting on line-162 of the code. Change the setting to the filename of the model weight file for the desired results. For example:
 
 ```
 setting = 'STD3_M100_50_50_50_mixed_std'
