@@ -61,6 +61,8 @@ def data_provider(args, flag):
         features=args.features,
         timeenc=timeenc,
         freq=freq,
+        target1=args.target1,
+        target2=args.target2,
     )
 
     print(flag, len(data_set))

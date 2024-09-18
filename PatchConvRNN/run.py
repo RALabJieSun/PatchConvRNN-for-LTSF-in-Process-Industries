@@ -9,7 +9,7 @@ if __name__ == '__main__':
 
     parser.add_argument('--random_seed', type=int, default=2024, help='random seed')
 
-    parser.add_argument('--is_training', type=int, default=1, help='status')
+    parser.add_argument('--is_training', type=int, default=0, help='status')
     parser.add_argument('--model_id', type=str, default='test', help='model id')
     parser.add_argument('--model', type=str, default='PatchConvBiLSTM', help='model name, options:PatchConvBiLSTM')
 
