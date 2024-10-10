@@ -96,8 +96,10 @@ test_trues_Y.csv: Actual values.
 
 Our research uses the PyTorch deep learning framework for model construction, with experimentation conducted on the following computer hardware and software configurations: Linux operating system，2 × Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz，2 × NVIDIA GeForce RTX 4090, utilizing CUDA 9.2 as the GPU parallel computing platform. The detailed model training process: The batch size is 120, the learning rate is 0.001, the number of training epochs is 35, and the optimizer used is AdamW. The learning rate adjustment strategy involved maintaining a constant learning rate for the first three epochs, followed by a 10% decay for each subsequent epoch. the model hyperparameters for the best predictive performance are shown in **Table A1**.
 
-<div align=center>Table A1 Hyperparameter determinations to achieve SOTA results for different forecasting horizons.<div>
+<div align=center>Table A1 Hyperparameter determinations to achieve SOTA results for different forecasting horizons.</div>
+
 <img src='fig/Table A1a.jpg'>
+
 
 
 <img src='fig/Table A1b.jpg'>
