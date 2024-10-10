@@ -92,9 +92,16 @@ test_trues_Y.csv: Actual values.
 
 
 
+## 1.3 Training details and hyperparameter determinations
 
+Our research uses the PyTorch deep learning framework for model construction, with experimentation conducted on the following computer hardware and software configurations: Linux operating system，2 × Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz，2 × NVIDIA GeForce RTX 4090, utilizing CUDA 9.2 as the GPU parallel computing platform. The detailed model training process: The batch size is 120, the learning rate is 0.001, the number of training epochs is 35, and the optimizer used is AdamW. The learning rate adjustment strategy involved maintaining a constant learning rate for the first three epochs, followed by a 10% decay for each subsequent epoch. the model hyperparameters for the best predictive performance are shown in **Table A1**.
 
+<div align=center>Table A1 Hyperparameter determinations to achieve SOTA results for different forecasting horizons.<div>
+![Table A1a](fig/Table A1a.jpg)
 
+![Table A1b](fig/Table A1b.jpg)
+
+**Note.** pred_len: the forecasting horizon; enc_patch_len: the length of each temporal patch extracted from the input sequence in encoder; dec_patch_len: the length of each temporal patch in decoder; fus_out: The output channels of the pointwise convolution; seq_cha: The number of variables or channels in the input sequence; seq_len: The number of time steps in the look-back window; conv_k: The kernel size used in depthwise convolution; dropout: The rate at which neurons are randomly set to zero during training to prevent overfitting; enc_in: The output dimensions or channels of Linear Projection before the RNN cell in encoder.
 
 # 2. RAL_TCM Dataset
 
