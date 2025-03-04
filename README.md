@@ -118,6 +118,14 @@ Our research uses the PyTorch deep learning framework for model construction, wi
 
 <img src='fig/Table A4.jpg' width='1000'>
 
+## 1.4 Mixed-STD Loss Result
+
+To mitigate the inductive bias introduced by traditional loss functions, we propose the **Mixed-STD loss** function. This novel loss function integrates both individual time-step errors and the statistical properties of the entire forecasting horizon. The **Mixed-STD loss** substantially reduces discrepancies between the predicted and actual value distributions, thereby capturing significant fluctuations in process variables more accurately. Consequently, the predicted sequences more closely follow the actual data trends. 
+
+<img src='fig/Mixed-STD loss result1.jpg' width='1000'>
+
+
+
 # 2. RAL_TCM Dataset
 
 ## 2.1 Overview of the Dataset
@@ -172,7 +180,7 @@ The dataset, named RAL_TCM (Tandem Cold-rolling Mill), is a large-scale benchmar
 ## 2.4 **Dataset Acquisition and Use**
 
 - **Github** **Open Source URL**： RAL_TCM Dataset | RALabJieSun/PatchConvRNN-for-LTSF-in-Process-Industries (github.com)](https://github.com/RALabJieSun/PatchConvRNN-for-LTSF-in-Process-Industries).
-- **Copyright Statement**： This     dataset and the associated work are provided by the State Key Laboratory     of Rolling and Automation (RAL), Northeastern University, Shenyang 110819,     Liaoning, PR China. The dataset is utilized exclusively for scientific     research purposes. If used, proper citation in the literature is required. Please     cite it as follows: ==**论文引用格式**==
+- **Copyright Statement**： This     dataset and the associated work are provided by the State Key Laboratory     of Rolling and Automation (RAL), Northeastern University, Shenyang 110819,     Liaoning, PR China. The dataset is utilized exclusively for scientific     research purposes. If used, proper citation in the literature is required. Please     cite it as follows: ==**LATER**==
 
 ## 2.5 Potential Application Areas for the Dataset
 
