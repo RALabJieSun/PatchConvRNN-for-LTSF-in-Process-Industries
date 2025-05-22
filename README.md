@@ -203,7 +203,17 @@ Our research uses the PyTorch deep learning framework for model construction, wi
 
 To mitigate the inductive bias introduced by traditional loss functions, we propose the **Mixed-STD loss** function. This novel loss function integrates both individual time-step errors and the statistical properties of the entire forecasting horizon. The **Mixed-STD loss** substantially reduces discrepancies between the predicted and actual value distributions, thereby capturing significant fluctuations in process variables more accurately. Consequently, the predicted sequences more closely follow the actual data trends. 
 
-<img src='fig/Mixed-STD loss result1.jpg' width='1000'>
+<img src='fig/Supplementary information files-2 (Visualizations of sample predictions for loss function comparison)_1.png' width='1000'>
+
+<img src='fig/Supplementary information files-2 (Visualizations of sample predictions for loss function comparison)_2.png' width='1000'>
+
+<img src='fig/Supplementary information files-2 (Visualizations of sample predictions for loss function comparison)_3.png' width='1000'>
+
+
+
+
+
+
 
 
 
