@@ -98,63 +98,9 @@ Our research uses the PyTorch deep learning framework for model construction, wi
 
 <div align=center><strong>Table A1</strong> Hyperparameter determinations to achieve SOTA results for different forecasting horizons.</div>
 
-| Forecasting tasks | pred_len | enc_patch_len | dec_patch_len | fus_out | seq_cha | seq_len | conv_k | dropout | enc_in |
-| :---------------: | :------: | :-----------: | :-----------: | :-----: | :-----: | :-----: | :----: | :-----: | :----: |
-|     RFC_STD#1     |    10    |      20       |      10       |   50    |   170   |   100   |  3×3   |   0.5   |  256   |
-|                   |    20    |      25       |       5       |   50    |         |         |        |         |        |
-|                   |    30    |      25       |       6       |   40    |         |         |        |         |        |
-|                   |    40    |       4       |       5       |   50    |         |         |        |         |        |
-|                   |    60    |       5       |       5       |   50    |         |         |        |         |        |
-|                   |    80    |       4       |      10       |   50    |         |         |        |         |        |
-|                   |   100    |      25       |      10       |   50    |         |         |        |         |        |
-|     RFC_STD#2     |    10    |      10       |      10       |   40    |   170   |   100   |  3×3   |   0.5   |  256   |
-|                   |    20    |      10       |       2       |   50    |         |         |        |         |        |
-|                   |    30    |       4       |      15       |   20    |         |         |        |         |        |
-|                   |    40    |       4       |       5       |   10    |         |         |        |         |        |
-|                   |    60    |      25       |       2       |   30    |         |         |        |         |        |
-|                   |    80    |      50       |       5       |   20    |         |         |        |         |        |
-|                   |   100    |      25       |       5       |   20    |         |         |        |         |        |
-|     RFC_STD#3     |    10    |      20       |       5       |   50    |   170   |   100   |  3×3   |   0.5   |  256   |
-|                   |    20    |      50       |       5       |   30    |         |         |        |         |        |
-|                   |    30    |      20       |       2       |   50    |         |         |        |         |        |
-|                   |    40    |      50       |       5       |   50    |         |         |        |         |        |
-|                   |    60    |      20       |      30       |   50    |         |         |        |         |        |
-|                   |    80    |      25       |      40       |   50    |         |         |        |         |        |
-|                   |   100    |      50       |      50       |   50    |         |         |        |         |        |
-|     RFC_STD#4     |    10    |       5       |       5       |   50    |   170   |   100   |  3×3   |   0.5   |  256   |
-|                   |    20    |      100      |       5       |   50    |         |         |        |         |        |
-|                   |    30    |      10       |       5       |   50    |         |         |        |         |        |
-|                   |    40    |      100      |       5       |   50    |         |         |        |         |        |
-|                   |    60    |      25       |      10       |   50    |         |         |        |         |        |
-|                   |    80    |       4       |       5       |   50    |         |         |        |         |        |
-|                   |   100    |      100      |       5       |   10    |         |         |        |         |        |
-|     RFC_STD#5     |    10    |      20       |      10       |   30    |   170   |   100   |  3×3   |   0.5   |  256   |
-|                   |    20    |       5       |       5       |   50    |         |         |        |         |        |
-|                   |    30    |      20       |       5       |   50    |         |         |        |         |        |
-|                   |    40    |      100      |       5       |   50    |         |         |        |         |        |
-|                   |    60    |      10       |      60       |   50    |         |         |        |         |        |
-|                   |    80    |       2       |      20       |   50    |         |         |        |         |        |
-|                   |   100    |      10       |      50       |   130   |         |         |        |         |        |
-|     THK_STD#1     |    10    |      50       |       5       |   50    |   170   |   100   |  3×3   |   0.5   |  256   |
-|                   |    20    |       5       |      10       |   50    |         |         |        |         |        |
-|                   |    30    |      25       |       5       |   50    |         |         |        |         |        |
-|                   |    40    |      10       |       8       |   50    |         |         |        |         |        |
-|                   |    60    |       5       |      40       |   90    |         |         |        |         |        |
-|                   |   100    |      100      |      20       |   50    |         |         |        |         |        |
-|     THK_STD#4     |    10    |      50       |       5       |   40    |   170   |   100   |  3×3   |   0.5   |  256   |
-|                   |    20    |      20       |      10       |   20    |         |         |        |         |        |
-|                   |    30    |      25       |       5       |   50    |         |         |        |         |        |
-|                   |    40    |      20       |      10       |   50    |         |         |        |         |        |
-|                   |    60    |      25       |      15       |   50    |         |         |        |         |        |
-|                   |    80    |      25       |       5       |   50    |         |         |        |         |        |
-|                   |   100    |      25       |      20       |   50    |         |         |        |         |        |
-|     THK_STD#5     |    10    |      50       |       5       |   50    |   170   |   100   |  3×3   |   0.5   |  256   |
-|                   |    20    |      20       |      10       |   30    |         |         |        |         |        |
-|                   |    30    |      25       |      155      |   50    |         |         |        |         |        |
-|                   |    40    |      10       |       5       |   50    |         |         |        |         |        |
-|                   |    60    |      50       |       5       |   50    |         |         |        |         |        |
-|                   |    80    |      50       |      10       |   50    |         |         |        |         |        |
-|                   |   100    |      25       |      10       |   50    |         |         |        |         |        |
+<img src='fig/Table1.png' width='1000'>
+
+<img src='fig/Tbale2.png' width='1000'>
 
 **Note.** pred_len: the forecasting horizon; enc_patch_len: the length of each temporal patch extracted from the input sequence in encoder; dec_patch_len: the length of each temporal patch in decoder; fus_out: The output channels of the pointwise convolution; seq_cha: The number of variables or channels in the input sequence; seq_len: The number of time steps in the look-back window; conv_k: The kernel size used in depthwise convolution; dropout: The rate at which neurons are randomly set to zero during training to prevent overfitting; enc_in: The output dimensions or channels of Linear Projection before the RNN cell in encoder.
 
