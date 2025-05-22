@@ -108,7 +108,18 @@ Our research uses the PyTorch deep learning framework for model construction, wi
 
 <div align=center><strong>Table A2 Effects of temporal patch length in the encoder on prediction results.</strong> The forecasting horizon T is 100 and the best results are highlighted in <strong>bold</strong>.</div>
 
-<img src='fig/Table A2.jpg' width='1000'>
+| enc_patch_len | RFC_STD#1 (RMSE) | RFC_STD#1 (MAPE) | RFC_STD#2 (RMSE) | RFC_STD#2 (MAPE) | RFC_STD#3 (RMSE) | RFC_STD#3 (MAPE) | RFC_STD#4 (RMSE) | RFC_STD#4 (MAPE) | RFC_STD#5 (RMSE) | RFC_STD#5 (MAPE) | THK_STD#1 (RMSE) | THK_STD#1 (MAPE) | THK_STD#4 (RMSE) | THK_STD#4 (MAPE) | THK_STD#5 (RMSE) | THK_STD#5 (MAPE) |
+| ------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- |
+| 2             | 159.027          | 1.231            | 52.869           | 0.396            | 52.837           | 0.472            | 48.756           | 0.479            | **32.553**       | **0.310**        | 4.027            | 1.632            | 1.201            | 1.594            | 1.120            | 1.782            |
+| 4             | 158.643          | 1.230            | 51.528           | 0.384            | 46.725           | 0.385            | 48.648           | 0.479            | 33.440           | 0.340            | 4.027            | 1.632            | 1.159            | 1.538            | 1.107            | 1.762            |
+| 5             | 153.044          | 1.192            | 52.025           | 0.391            | 49.635           | 0.386            | 44.994           | 0.466            | 34.991           | 0.340            | 3.876            | 1.566            | 1.158            | 1.533            | 1.062            | 1.692            |
+| 10            | 161.596          | 1.261            | 51.866           | 0.386            | 46.006           | 0.410            | 44.013           | 0.462            | 42.356           | 0.434            | 4.085            | 1.663            | 1.183            | 1.571            | 1.105            | 1.761            |
+| 20            | 175.788          | 1.376            | 53.041           | 0.398            | 47.271           | 0.392            | 42.641           | 0.407            | 41.311           | 0.402            | 4.024            | 1.706            | 1.158            | 1.535            | 1.116            | 1.779            |
+| 25            | **150.669**      | **1.172**        | **50.492**       | **0.381**        | 49.311           | 0.418            | 44.240           | 0.458            | 40.270           | 0.412            | 4.006            | 1.633            | **1.126**        | **1.491**        | **1.045**        | **1.663**        |
+| 50            | 159.961          | 1.245            | 52.276           | 0.394            | **45.850**       | **0.380**        | 43.964           | 0.455            | 35.860           | 0.351            | 4.076            | 1.667            | 1.183            | 1.568            | 1.065            | 1.694            |
+| 100           | 182.514          | 1.409            | 53.720           | 0.405            | 49.889           | 0.421            | **43.669**       | **0.452**        | 35.860           | 0.317            | **3.821**        | **1.538**        | 1.175            | 1.557            | 1.065            | 1.695            |
+
+
 
 <div align=center><strong>Table A3 Effects of temporal patch length in the decoder on prediction results.</strong> The forecasting horizon T is 100 and the best results are highlighted in <strong>bold</strong>.</div>
 
